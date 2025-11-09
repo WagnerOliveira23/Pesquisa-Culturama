@@ -54,6 +54,15 @@ label {
     margin-bottom: 5px;
 }
 
+input[type="tel"]{
+    margin-bottom: 0;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 p {
     margin-bottom: 15px;
     font-weight: bold;
@@ -82,16 +91,21 @@ input[type="color"] {
     padding: 0 5px;
 }
 
-input:invalid,
-select:invalid,
-textarea:invalid {
-    border-color: red;
+input:focus{
+    border-color: cornflowerblue;
+    outline: none;
 }
 
 input:valid,
 select:valid,
 textarea:valid {
     border-color: green;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
 }
 
 button {
